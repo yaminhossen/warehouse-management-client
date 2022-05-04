@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
+import './Items.css'
 
 const Items = () => {
 
@@ -12,13 +13,15 @@ const Items = () => {
     }, [])
     return (
         <div>
-            <h2>Items: {items.length}</h2>
-            {
-                items.map(item => <Item
-                    key={item._id}
-                    item={item}
-                ></Item>)
-            }
+            <h1 className='items-title'>My Items</h1>
+            <div className="items-container">
+                {
+                    items.map(item => <Item
+                        key={item._id}
+                        item={item}
+                    ></Item>)
+                }
+            </div>
         </div>
     );
 };
