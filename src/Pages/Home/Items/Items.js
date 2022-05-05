@@ -12,7 +12,7 @@ const Items = () => {
             .then(data => setItems(data))
     }, [])
     return (
-        <div>
+        <div id='items'>
             <h1 className='items-title text-primary'>My Items</h1>
             <div className="items-container">
                 {
