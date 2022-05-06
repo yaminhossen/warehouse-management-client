@@ -49,8 +49,13 @@ const Login = () => {
     }
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        toast('send email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('send email');
+        }
+        else {
+            toast('Please enter your email address');
+        }
     }
     return (
         <div className='container w-50 mx-auto'>
