@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, Form, Toast } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -45,7 +45,7 @@ const Login = () => {
     const resetPassword = async () => {
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
-        Toast('send email');
+
     }
     return (
         <div className='container w-50 mx-auto'>
