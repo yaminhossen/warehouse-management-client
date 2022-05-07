@@ -7,7 +7,7 @@ const ManageItem = () => {
         <div>
             <h3>Here have all items</h3>
             <div>
-                <Nav.Link as={Link} to="/AddItem">Add Item</Nav.Link>
+                <Nav.Link as={Link} to="/addItem">Add Item</Nav.Link>
             </div>
         </div>
     );
