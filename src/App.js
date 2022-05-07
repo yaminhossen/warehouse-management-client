@@ -8,6 +8,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ManageItem from './Pages/ManageItem/ManageItem';
+import AddItem from './Pages/AddItem/AddItem';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/manageItem' element={<ManageItem></ManageItem>}></Route>
+        <Route path='/addItem' element={<AddItem></AddItem>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer> </Footer>

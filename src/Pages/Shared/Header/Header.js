@@ -29,7 +29,12 @@ const Header = () => {
                             </NavDropdown> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="manageItem">Manage Item</Nav.Link>
+                            {
+                                user ?
+                                    <Nav.Link as={Link} to="manageItem">Manage Item</Nav.Link>
+                                    :
+                                    <button className='border-0 bg-warning'></button>
+                            }
                             {
                                 user ?
                                     <button className='btn btn-link text-decoration-none text-white' onClick={handleSignOut}>SignOut</button>

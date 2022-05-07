@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import ManageItem from '../../ManageItem/ManageItem';
 import Item from '../Item/Item';
 import './Items.css'
 
@@ -22,6 +25,9 @@ const Items = () => {
                     ></Item>)
                 }
             </div>
+            <nav>
+                <Nav.Link as={Link} to="/manageItem">Manage Item</Nav.Link>
+            </nav>
         </div>
     );
 };
