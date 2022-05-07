@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
 const Inventory = () => {
     const { inventoryID } = useParams();
+    const [item, setItem] = useState({});
+
+    useEffect(() => {
+        const url = `http://localhost:5000/item/${inventoryID}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setItem(data));
+    }, [])
     return (
         <div>
             <div className='text-center mb-4'>
-                <h2>Wellcome to my inventoiry page:{inventoryID}</h2>
+                <h2>Wellcome to my inventoiry page:{item.name}</h2>
             </div>
             <div className='text-center mb-4'>
                 <button className=' bg-warning border border-redius-4'>Delivered</button>
