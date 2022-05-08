@@ -1,8 +1,31 @@
-# Getting Started with Create React App
+
+# Fruits Warehouse Managment
+
+## [Live Site Link]()
+
+### Some feature of my website.
+
+- This is my fruits stocking wevsite.
+- Here we have types of fruits items.
+- Anybody can take this items if they are register in my website. And some money.
+- Here have signin signup system. And also you can add item.
+- Here also have significant question answer in the blog section.
+
+### list of the techonologies like framework or libraries.
+
+1. Firebase. 
+2. React Router Hooks.
+3. React Bootstrap.
+4. Bootstrap.
+5. Vanilla css.
+6. Javascript.
+7. Mongodb
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+https://github.com/yaminhossen/my-forth-repo/issues/1
 
 In the project directory, you can run:
 
@@ -67,4 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
