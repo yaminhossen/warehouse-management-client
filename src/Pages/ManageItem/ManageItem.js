@@ -23,7 +23,7 @@ const ManageItem = () => {
     }
     return (
         <div>
-            <h3>Here have all items:{items.length}</h3>
+            <h3 className='text-center my-4'>Here have all our available item:{items.length}</h3>
             <div className='items-container'>
 
                 {
@@ -41,7 +41,7 @@ const ManageItem = () => {
                     </div>)
                 }
                 <div>
-                    <Nav.Link as={Link} to="/addItem">Add Item</Nav.Link>
+                    <Nav.Link className='add-link' as={Link} to="/addItem">Add Item</Nav.Link>
                 </div>
             </div>
         </div>

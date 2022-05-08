@@ -1,11 +1,24 @@
+.items {
+    margin-top: 0px;
+}
+
 .items-title {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(241, 184, 60);
 }
 
 .items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+}
+
+.m-button {
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
 }
 
 /* make responsive */

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import './AddItem.css'
 
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
@@ -20,7 +21,7 @@ const AddItem = () => {
     };
 
     return (
-        <div className='w-50 mx-auto'>
+        <div className='w-50 add-item mx-auto'>
             <h2>Add your items</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
