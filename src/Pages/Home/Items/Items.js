@@ -24,7 +24,7 @@ const Items = () => {
                 }
                 {
                     user ?
-                        <Nav.Link style={{ height: "40px" }} className='m-button text-white bg-warning  ' as={Link} to="manageItem">Manage Item</Nav.Link>
+                        <Nav.Link style={{ height: "40px" }} className='m-button text-white bg-warning  ' as={Link} to="/manageItem">Manage Item</Nav.Link>
                         :
                         <button className='border-0 bg-white'></button>
                 }
