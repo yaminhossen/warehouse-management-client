@@ -1,7 +1,7 @@
 
 # Fruits Warehouse Managment
 
-## [Live Site Link]()
+## [Live Site Link](https://fruits-warehouse-management.web.app/)
 
 ### Some feature of my website.
 
