@@ -16,12 +16,12 @@ const NewSection2 = () => {
                 </div>
                 <div className='item'>
                     <img src={new2} alt="" />
-                    <h3>Name: Cherry</h3>
+                    <h3>Name: Dragon</h3>
                     <h3>Price: $ 240</h3>
                 </div>
                 <div className='item'>
                     <img src={new3} alt="" />
-                    <h3>Name: Cherry</h3>
+                    <h3>Name: Watermelon</h3>
                     <h3>Price: $ 300</h3>
                 </div>
             </div>
