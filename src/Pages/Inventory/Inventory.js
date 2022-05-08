@@ -71,7 +71,7 @@ const Inventory = () => {
             </div>
             <div>
                 <nav>
-                    <Nav.Link as={Link} to="/manageItem">Manage Item</Nav.Link>
+                    <Nav.Link className='text-center m-button' as={Link} to="/manageItem">Manage Item</Nav.Link>
                 </nav>
             </div>
         </div>
