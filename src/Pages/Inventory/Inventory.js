@@ -8,7 +8,7 @@ const Inventory = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${inventoryID}`;
+        const url = `https://mysterious-cove-91305.herokuapp.com/${inventoryID}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -24,7 +24,7 @@ const Inventory = () => {
         console.log(updatedItem);
 
         // send data to the server side
-        const url = `http://localhost:5000/item/${inventoryID}`;
+        const url = `https://mysterious-cove-91305.herokuapp.com/${inventoryID}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -10,7 +10,7 @@ const MyItem = () => {
     useEffect(() => {
         const getOrders = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/item?email=${email}`;
+            const url = `https://mysterious-cove-91305.herokuapp.com/?email=${email}`;
             const { data } = await axios.get(url);
             setItems(data);
         }
