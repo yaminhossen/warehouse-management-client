@@ -10,7 +10,7 @@ const ManageItem = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://mysterious-cove-91305.herokuapp.com/${id}`;
+            const url = `https://mysterious-cove-91305.herokuapp.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

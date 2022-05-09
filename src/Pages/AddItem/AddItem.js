@@ -6,7 +6,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `https://mysterious-cove-91305.herokuapp.com/`;
+        const url = `https://mysterious-cove-91305.herokuapp.com/item`;
         fetch(url, {
             method: 'POST',
             headers: {
